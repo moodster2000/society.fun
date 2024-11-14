@@ -1,0 +1,15 @@
+.game-background {
+  background-color: #1a1a1a;
+}
+
+/* Add these utility classes if you're not using them from Tailwind */
+.font-pixel {
+  font-family: 'Press Start 2P', monospace; /* or your pixel font */
+}
+
+/* Ensure the game canvas fills the container */
+.game-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+} 

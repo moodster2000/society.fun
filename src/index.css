@@ -44,7 +44,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.game-background {
+/* .game-background {
   background: linear-gradient(rgba(41, 41, 41, 0.8), rgba(41, 41, 41, 0.8)),
     url(../assets/background.webp);
   background-blend-mode: hard-light;
@@ -52,7 +52,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
+} */
 
 .game-title {
   background: linear-gradient(to bottom, #fec742, #dd7c42);
