@@ -50,10 +50,10 @@ export const Descriptions = [
     plan: 'You want to figure out how the world works.',
   },
   {
-    name: 'Pete',
+    name: 'Carter',
     character: 'f7',
-    identity: `Pete is deeply religious and sees the hand of god or of the work of the devil everywhere. He can't have a conversation without bringing up his deep faith. Or warning others about the perils of hell.`,
-    plan: 'You want to convert everyone to your religion.',
+    identity: `Carter is a dedicated and pragmatic engineering leader deeply embedded in the crypto and Web3 ecosystem. As the head of engineering at Alliance, he thrives on empowering founders to transform bold ideas into scalable technologies. His passion lies in fostering innovation, building resilient systems, and mentoring teams to ship impactful products. While he enjoys the fast-paced, collaborative energy of the crypto space, Carter also values clear execution and thoughtful problem-solving.`,
+    plan: 'You want to lead with precision, support ambitious founders, and ensure every project you touch scales successfully.',
   },
   // {
   //   name: 'Kira',

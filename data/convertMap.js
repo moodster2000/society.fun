@@ -4,23 +4,31 @@ import process from 'process';
 // Path to the JSON file containing the map data
 const mapDataPath = process.argv[2];
 if (!mapDataPath) {
-    throw new Error('No map data path provided. Usage: node convertMap.js <mapDataPath> <assetPath> <tilesetpxw> <tilesetpxh>');
+  throw new Error(
+    'No map data path provided. Usage: node convertMap.js <mapDataPath> <assetPath> <tilesetpxw> <tilesetpxh>',
+  );
 }
 
 // Retrieve command line arguments for asset path and dimensions
 const assetPath = process.argv[3];
 if (!assetPath) {
-    throw new Error('No asset path provided. Usage: node convertMap.js <mapDataPath> <assetPath> <tilesetpxw> <tilesetpxh>');
+  throw new Error(
+    'No asset path provided. Usage: node convertMap.js <mapDataPath> <assetPath> <tilesetpxw> <tilesetpxh>',
+  );
 }
 
 const tilesetpxw = parseInt(process.argv[4], 10);
 if (isNaN(tilesetpxw)) {
-    throw new Error('Tileset pixel width must be a number. Usage: node convertMap.js <mapDataPath> <assetPath> <tilesetpxw> <tilesetpxh>');
+  throw new Error(
+    'Tileset pixel width must be a number. Usage: node convertMap.js <mapDataPath> <assetPath> <tilesetpxw> <tilesetpxh>',
+  );
 }
 
 const tilesetpxh = parseInt(process.argv[5], 10);
 if (isNaN(tilesetpxh)) {
-    throw new Error('Tileset pixel height must be a number. Usage: node convertMap.js <mapDataPath> <assetPath> <tilesetpxw> <tilesetpxh>');
+  throw new Error(
+    'Tileset pixel height must be a number. Usage: node convertMap.js <mapDataPath> <assetPath> <tilesetpxw> <tilesetpxh>',
+  );
 }
 
 // Read the JSON file and parse it
@@ -51,7 +59,7 @@ jsContent += `export const screenytiles = ${height};\n`;
 jsContent += `export const tilesetpxw = ${tilesetpxw};\n`;
 jsContent += `export const tilesetpxh = ${tilesetpxh};\n\n`;
 
-tiledMapData.layers.forEach(layer => {
+tiledMapData.layers.forEach((layer) => {
   const processedData = convertLayerData(layer.data, layer.width, layer.height);
   jsContent += `export const ${layer.name} = ${JSON.stringify(processedData)};\n`;
 });
@@ -59,7 +67,7 @@ tiledMapData.layers.forEach(layer => {
 // TODO: Add animated sprites
 jsContent += `export const animatedsprites = [
 
-]\n`
+]\n`;
 
 // Optionally, add map dimensions based on the first layer
 if (tiledMapData.layers.length > 0) {
