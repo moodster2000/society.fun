@@ -110,12 +110,12 @@ export const Descriptions = [
 ];
 
 export const characters = [
-  {
-    name: 'hydraapple',
-    textureUrl: '/ai-town/assets/hydraapple_overworld_sprite_by_darkusshadow_dgmhtlv.png',
-    spritesheetData: hypdraapppleDataSpritesheetData,
-    speed: 0.1,
-  },
+  // {
+  //   name: 'hydraapple',
+  //   textureUrl: '/ai-town/assets/hydraapple_overworld_sprite_by_darkusshadow_dgmhtlv.png',
+  //   spritesheetData: hypdraapppleDataSpritesheetData,
+  //   speed: 0.1,
+  // },
   {
     name: 'arcanine',
     textureUrl: '/ai-town/assets/hisuan_arcaninine_overworld_sprite_by_darkusshadow_df0kiu0.png',

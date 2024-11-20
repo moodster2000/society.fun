@@ -33,8 +33,13 @@ export const Player = ({
   if (!playerCharacter) {
     throw new Error(`Player ${player.id} has no character`);
   }
+  let character;
 
-  const character = characters.find((c) => c.name === playerCharacter);
+  if (isViewer) {
+    character = characters.find((c) => c.name === 'f1');
+  } else {
+    character = characters.find((c) => c.name === playerCharacter);
+  }
 
   const locationBuffer = game.world.historicalLocations?.get(player.id);
   const historicalLocation = useHistoricalValue<Location>(
