@@ -33,6 +33,7 @@ export const Player = ({
   if (!playerCharacter) {
     throw new Error(`Player ${player.id} has no character`);
   }
+
   const character = characters.find((c) => c.name === playerCharacter);
 
   const locationBuffer = game.world.historicalLocations?.get(player.id);
