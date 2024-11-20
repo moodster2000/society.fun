@@ -8,6 +8,11 @@ import { data as f7SpritesheetData } from './spritesheets/f7';
 import { data as f8SpritesheetData } from './spritesheets/f8';
 import { charizardData as charizardSpritesheetData } from './spritesheets/charizard';
 import { blackCharizardData as blackCharizardDataSpritesheetData } from './spritesheets/darkCharizard';
+import { slowpokeData as slowpokeDataSpritesheetData } from './spritesheets/slowpoke';
+import { hoopaData as hoopaDataSpritesheetData } from './spritesheets/hoopa';
+import { grimerData as grimerDataSpritesheetData } from './spritesheets/grimer';
+import { arcaninedData as arcanineDataSpritesheetData } from './spritesheets/arcanine';
+import { hypdraapppleData as hypdraapppleDataSpritesheetData } from './spritesheets/hydraapple';
 
 export const Descriptions = [
   // {
@@ -46,9 +51,9 @@ export const Descriptions = [
   //   plan: 'You want to spread knowledge.',
   // },
   {
-    name: 'Drake',
+    name: 'Qiao',
     character: 'charizard',
-    identity: `Drake is a fierce and proud dragon-type character who patrols the virtual world. Despite his intimidating appearance, he has a heart of gold and helps protect other characters.`,
+    identity: `Qiao is a fierce and proud dragon-type character who patrols the virtual world. Despite his intimidating appearance, he has a heart of gold and helps protect other characters.`,
     plan: 'You want to maintain peace and help others while showing your strength.',
   },
   {
@@ -57,6 +62,36 @@ export const Descriptions = [
     identity: `Drake is a fierce and proud dragon-type character who patrols the virtual world. Despite his intimidating appearance, he has a heart of gold and helps protect other characters.`,
     plan: 'You want to maintain peace and help others while showing your strength.',
   },
+  {
+    name: 'Hoopa',
+    character: 'hoopa',
+    identity: `A mischievous mythical monster with the power to warp space and transport objects through rings. Despite immense power, has a playful and sometimes troublesome personality. Loves to create elaborate pranks using its ring portals, but maintains a sense of ethics. Highly intelligent but can be easily distracted by interesting artifacts or treasures.`,
+    plan: 'You seek to have fun with your dimensional powers while avoiding causing any serious trouble.',
+  },
+  {
+    name: 'Slowly',
+    character: 'slowpoke',
+    identity: `A perpetually relaxed monster encased in armor for protection. Despite the hefty armor, maintains the classic laid-back Slowpoke personality. Takes time to process information and react, but surprisingly insightful when finally responding. Has a peculiar mix of wisdom and obliviousness. Often spends time contemplating the deeper meanings of simple things.`,
+    plan: 'You want to share your unique perspective on life, even if it takes a while to formulate your thoughts.',
+  },
+  {
+    name: 'Grimey',
+    character: 'grimer',
+    identity: `A toxic sludge monster with a surprisingly friendly personality. Despite its intimidating appearance, it's quite sociable and enjoys meeting new friends. Has a peculiar sense of humor and tends to leave a mess wherever it goes. Very protective of its friends despite its toxic nature.`,
+    plan: 'You want to make friends while being careful not to accidentally poison anyone.',
+  },
+  {
+    name: 'Arcy',
+    character: 'arcanine',
+    identity: `A majestic and loyal fire-type monster known for its incredible speed and noble spirit. Combines fierce power with a gentle heart, acting as both a protective guardian and trusted companion. Despite its intimidating appearance, has a playful side and loves to run at high speeds.`,
+    plan: 'You aim to protect others while showcasing your impressive speed and strength.',
+  },
+  // {
+  //   name: 'HydraApple',
+  //   character: 'hydraapple',
+  //   identity: `A peculiar monster that resembles a living apple with dragon-like features. Despite its small size, it carries itself with draconic pride. Sometimes struggles between its sweet fruity nature and fierce dragon heritage. Has a particular fondness for orchards and sunny spots.`,
+  //   plan: 'You aim to prove that even a small dragon apple can be formidable while maintaining a sweet disposition.',
+  // },
   // {
   //   name: 'Carter',
   //   character: 'f7',
@@ -75,6 +110,36 @@ export const Descriptions = [
 ];
 
 export const characters = [
+  {
+    name: 'hydraapple',
+    textureUrl: '/ai-town/assets/hydraapple_overworld_sprite_by_darkusshadow_dgmhtlv.png',
+    spritesheetData: hypdraapppleDataSpritesheetData,
+    speed: 0.1,
+  },
+  {
+    name: 'arcanine',
+    textureUrl: '/ai-town/assets/hisuan_arcaninine_overworld_sprite_by_darkusshadow_df0kiu0.png',
+    spritesheetData: arcanineDataSpritesheetData,
+    speed: 0.1,
+  },
+  {
+    name: 'hoopa',
+    textureUrl: '/ai-town/assets/naganadel_spritesheet_by_sagedeoxys_dclm3wz.png',
+    spritesheetData: hoopaDataSpritesheetData,
+    speed: 0.1,
+  },
+  {
+    name: 'slowpoke',
+    textureUrl: '/ai-town/assets/mslowbro_spritesheet_by_sagedeoxys_dcs918z.png',
+    spritesheetData: slowpokeDataSpritesheetData,
+    speed: 0.1,
+  },
+  {
+    name: 'grimer',
+    textureUrl: '/ai-town/assets/_s_alolangrimer_spritesheet_by_sagedeoxys_dcolsoq.png',
+    spritesheetData: grimerDataSpritesheetData,
+    speed: 0.1, // Slower speed to match Muk's sludgy nature
+  },
   {
     name: 'f1',
     textureUrl: '/ai-town/assets/32x32folk.png',
